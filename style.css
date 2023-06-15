@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------header----------- */
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('assets/img/fond.jpg') center center fixed
+    no-repeat;
+    background-size: cover;
+    opacity: 1.33; 
+    height: 500px;
+   
+}
+.navbar{
+    
+}
+.font p{
+    font-size: 60px; 
+   /* font-weight: 100; */
+   opacity: 1;
+   /* color: #fff;  */
+}
+
+/* ----------------navbar------------------- */
+
+.navbar{
+    background: #be0e0e;
+    padding-top: 30px;
+    bottom:46px;
+    opacity: 0.90;
+}
+
+.navbar-nav li{
+    padding: 26px;
+    font-size: 25px;
+    align-items: center;
+}
+  
+.accueil img{
+    width: auto;
+    padding-top: 30px;
+}
+
+.accueil .card{
+    background:rgb( 228, 221, 183 );
+    position: relative;
+    left: 90px;
+    top: 100px;
+}
+.accueil button{
+    text-align: center;
+    position: relative;
+    left: 16em;
+    top: 4em;
+    padding: 0px 20px;
+}
+
+.opacity{
+    background: #be310e;
+    padding: 25px;
+    opacity: 0.76;
+}
+.opacity .card{
+   background: rgb( 228, 221, 183 );
+    padding: 30px ;
+    width: 50%;
+   margin: auto;
+}
+.footer{
+    padding: 40px;
+    background: #311919;
+}
+.footer p{
+    align-items: center;
+}
+
+/* ----------------about----------------- */
+span{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 50;
+    font-style: normal;
+    
+}
+
+.text{
+    font-weight: 200;
+}
+.about-wrapper img{
+    height: 400px;
+}
+.tt{
+    width: max-content;
+}
+.about .card{
+    position: relative;
+    width: 60%;
+    height: 250px;
+    margin: auto;
+    bottom: 3em;
+}
+
+/* -----------------products--------------- */
+
+.products img{
+    width: auto;
+    padding-top: 20%; 
+}
+
+.droit .card{
+    position: relative;
+    left: -5em;
+    bottom: -38px;  
+    padding: 0;
+   
+}
+.gauche .card{
+    position: relative;top: 35em;
+     left: 49px;
+     padding: 0 19px;
+    /* position: relative;
+    top: 25em;
+    padding: 0 19px; */
+}
+.premier .card{
+    position: relative;
+    left: 5em;
+    top: 6em;  
+    padding: 0;
+}
+.deuxiem .card{
+    position: relative;
+    top: 30em;
+     right:  5em;
+     padding: 0 19px; 
+}
+
+/* ---------------------store------------------ */
+
+.store{
+    background: rgb(230, 63, 8);
+    background-image: transparent;
+    padding: 30px;
+}
+.color{
+    background: rgb( 228, 221, 183 );
+    /* padding: 25px; */
+}
+.tre{
+    padding: 25px;
+}
+.tre  p {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 100;
+}
+.tre h5{
+    text-transform: uppercase;
+}
+.table{
+    width: 70%;
+    margin: auto;
+}
+td{
+    text-align: end;
+}
+.th{
+    text-align: end;
+}
+/* -------------------------responsive------------------------------- */
+@media(max-width: 767px){
+    .display{
+        display: none;
+    }
+    /* --------------home------------- */
+
+    .renvers{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .accueil .card{
+        position: relative;
+        top: 35px;
+        left: 5px;
+    }
+    .accueil button{
+        position: relative;
+        /* top: 35em; */
+        /* left: 49px; */
+        left: calc(50% - 25px);
+        top: calc(10% - 10px);
+        padding: 0 19px;
+    }
+    .opacity .card{
+      width: auto;
+      padding: 0;
+    }
+
+    /* -----------about responsive */
+    .lex{
+        height: 250px;
+    }
+
+    .about .card{
+        position: relative;
+        /* left: 20em; */
+        /* left: calc(50% - 25px); */
+        padding: 0;
+        height: 50%; 
+        width: auto;
+        top: 1em;
+    }
+
+    /* ----------------about responsive---------------- */
+    .droit .card{
+        position: relative;
+        left: 0;
+        bottom: 26em; 
+        padding: 0;
+       
+    }
+    .gauche .card{
+        position: relative;
+        top: 30em;
+        
+         left: 0;
+         padding: 0 21px;
+        
+    }
+    .premier .card{
+        position: relative;
+        left: 0;
+        top: 4em;  
+        padding: 0;
+    }
+    .deuxiem .card{
+        position: relative;
+        top: 1em;
+        left:  0;
+         padding: 0 19px; 
+    }
+    
+}
